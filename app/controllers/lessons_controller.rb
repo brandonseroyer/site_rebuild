@@ -1,6 +1,6 @@
 class LessonsController < ApplicationController
   def index
-      @lessons = Lesson.all
+      @lessons = Lesson.sort_lessons
       render :index
   end
 
@@ -43,9 +43,8 @@ class LessonsController < ApplicationController
     redirect_to lessons_path
   end
 
-    private
-    def lesson_params
-      params.require(:lesson).permit(:name, :content, :number)
-    end
-
+  private
+  def lesson_params
+    params.require(:lesson).permit(:name, :content, :number)
+  end
 end

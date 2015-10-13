@@ -10,3 +10,7 @@
                          :data => {:confirm => "Are you sure?",
                                    :method => "delete"} %></li>
 </ul>
+
+<hr>
+
+<%= link_to "Next Lesson", lesson_path(@lesson.next) %> | <%= link_to "Prev Lesson", lesson_path(@lesson.prev) %>

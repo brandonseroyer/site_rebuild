@@ -9,6 +9,7 @@ gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
+gem 'bootstrap-sass', '~> 3.3.5'
 
 group :development do
   gem 'byebug'
@@ -25,4 +26,5 @@ end
 
 group :test do
   gem 'shoulda-matchers', '~>3.0.0'
+  gem 'capybara'
 end
