@@ -1,12 +1,12 @@
 class LessonsController < ApplicationController
   def index
-      @lessons = Lesson.sort_lessons
-      render :index
+    @lessons = Lesson.sort_lessons
+    render :index
   end
 
   def show
-      @lesson = Lesson.find(params[:id])
-      render :show
+    @lesson = Lesson.find(params[:id])
+    render :show
   end
 
   def new
